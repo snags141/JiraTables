@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>JiraTables</title>
+    <link rel="stylesheet" href="./popup_files/bootstrap.min.css">
+</head>
+
+<body style="max-width: 100%;width: 320px;">
+    <div class="row" style="width: 100%;margin: 0px;">
+        <div class="col text-center" style="padding: 0px;"><img height="80px" src="./popup_files/jiratables.png"></div>
+    </div>
+    <div class="row" style="margin: 0px;margin-left: 10px;margin-right: 10px;">
+        <div class="col" style="margin: 0px;padding: 0px;"><button class="btn btn-primary" id="btnEnable" type="button" style="width: 100%;">Toggle</button></div>
+    </div>
+    <div class="row d-flex align-items-end" style="margin-right: 10px;margin-left: 10px;margin-top: 20px;">
+        <div class="col d-flex align-items-end" style="padding: 0px;margin: 0px;"><label class="col-form-label d-flex align-items-end" style="font-weight: bold;padding-bottom: 0;">General Controls</label></div>
+    </div>
+    <div class="row" style="padding: 0px;margin-right: 10px;margin-left: 10px;">
+        <div class="col">
+            <div class="row d-flex align-items-center">
+                <div class="col" style="width: 50px;"><label class="col-form-label d-flex justify-content-start" style="margin-right: 5px;">Table Width</label></div>
+                <div class="col" style="margin-left: 0px;padding-left: 0px;padding-right: 20px;margin-right: 0px;"><input type="text" inputmode="numeric" style="width: 100%;margin-right: 20px;padding-right: 20px;" placeholder="100" value="100" id="txtTableWidth"></div>
+                <div class="col" style="margin-left: 0px;padding-left: 0px;padding-right: 0px;">
+                    <div class="dropdown" id="cboxUnit"><button class="btn btn-primary dropdown-toggle" id="btnDropdown" data-toggle="dropdown" aria-expanded="false" type="button" style="width: 100%;">Percent&nbsp;</button>
+                        <div id="menuDropdown" class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" id="cboxBtnPixels" href="">Pixels</a><a class="dropdown-item" role="presentation" id="cboxBtnPercent" type="button" style="width: 100%;">Percent</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
